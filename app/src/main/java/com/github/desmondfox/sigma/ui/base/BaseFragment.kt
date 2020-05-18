@@ -13,7 +13,5 @@ abstract class BaseFragment<VM : BaseVM> : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(viewModelClass)
-
-
     }
 }
