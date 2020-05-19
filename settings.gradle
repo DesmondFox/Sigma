@@ -1,2 +1,4 @@
 rootProject.name='Sigma'
 include ':app'
+include ':chancore'
+include ':ext-dvach'

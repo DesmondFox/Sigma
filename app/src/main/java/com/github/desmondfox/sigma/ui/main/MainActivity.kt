@@ -3,6 +3,7 @@ package com.github.desmondfox.sigma.ui.main
 import android.os.Bundle
 import com.github.desmondfox.sigma.R
 import com.github.desmondfox.sigma.ui.base.BaseActivity
+import com.github.desmondfox.sigma.ui.main.boards.BoardsFragment
 
 class MainActivity : BaseActivity() {
     override val containerId: Int = R.id.flMainContainer
@@ -10,6 +11,6 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        replace(BoardsFragment.newInstance(), false)
     }
 }

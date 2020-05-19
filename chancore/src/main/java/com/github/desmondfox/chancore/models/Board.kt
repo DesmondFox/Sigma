@@ -1,11 +1,11 @@
-package com.github.desmondfox.sigma.models
+package com.github.desmondfox.chancore.models
 
-import com.github.desmondfox.sigma.DEFAULT_BUMPLIMIT
-import com.github.desmondfox.sigma.DEFAULT_SPEED
-import com.github.desmondfox.sigma.DEFAULT_THREADCOUNT
-import com.github.desmondfox.sigma.EMPTY_STRING
+import com.github.desmondfox.chancore.DEFAULT_BUMPLIMIT
+import com.github.desmondfox.chancore.DEFAULT_SPEED
+import com.github.desmondfox.chancore.DEFAULT_THREADCOUNT
+import com.github.desmondfox.chancore.EMPTY_STRING
 
-interface Board : Model {
+public interface Board : Model {
     val category: String
     val sageEnabled: Boolean
     val name: String
@@ -16,7 +16,7 @@ interface Board : Model {
     val speed: Int
 }
 
-class BoardModel(
+public class BoardModel(
     override val category: String = EMPTY_STRING,
     override val sageEnabled: Boolean = true,
     override val name: String = EMPTY_STRING,

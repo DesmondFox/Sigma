@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.desmondfox.chancore">
+
+    <application>
+        <activity
+            android:name=".ui.screens.handler.ChanRedirectActivity"
+            android:theme="@android:style/Theme.NoDisplay" />
+    </application>
+
+</manifest>
